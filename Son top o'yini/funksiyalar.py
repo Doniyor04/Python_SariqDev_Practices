@@ -1,9 +1,10 @@
 # son_top() biz
 # son_top_pc pc
 # yutuq hisoblagich
-# while 
+# while
 
 import random as r
+
 
 def son_top(x=10):
     urinish = 0
@@ -17,21 +18,26 @@ def son_top(x=10):
         elif taxmin < son_pc:
             print("Xato. Men o'ylagan son bundan katta. Yana xarakat qiling:")
         else:
-            print(f"Topdingiz! {taxmin} sonini o'ylagan edim. {urinish} ta taxmin bilan topdingiz. Tabriklayman!")
+            print(
+                f"Topdingiz! {taxmin} sonini o'ylagan edim. {urinish} ta taxmin bilan topdingiz. Tabriklayman!"
+            )
             break
     return urinish
+
 
 def son_top_pc(x=10):
     print(f"1 dan {x} gacha son o'ylang. Men topishga harakat qilaman.")
     input("Son o'ylagan bo'lsangiz istalgan tugmani bosing.")
-    urinish=0 
+    urinish = 0
     min = 1
     max = x
     while True:
         urinish += 1
         if min != max:
             taxmin_pc = r.randint(min, max)
-            javob = input(f"siz {taxmin_pc} sonini o'yladingiz: to'g'ri (T), men o'ylagan son bundan kattaroq (+), yoki kichikroq (-)")
+            javob = input(
+                f"siz {taxmin_pc} sonini o'yladingiz: to'g'ri (T), men o'ylagan son bundan kattaroq (+), yoki kichikroq (-)"
+            )
         else:
             taxmin_pc = min
             break
@@ -43,6 +49,7 @@ def son_top_pc(x=10):
             break
     print(f"Siz {taxmin_pc} sonini o'yladingiz. {urinish} ta taxminda topdim")
     return urinish
+
 
 def play(x=10):
     yana = True
@@ -58,6 +65,3 @@ def play(x=10):
             print(f"Durrang. Ikkimiz ham {taxmin} ta taxmin bilan topdik.")
 
         yana = int(input("Yana o'ynaymizmi?: ha(1) / yo'q(0): "))
-
-
-

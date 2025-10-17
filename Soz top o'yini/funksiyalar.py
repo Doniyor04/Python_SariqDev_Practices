@@ -1,12 +1,13 @@
-
 from uzwords import words
 import random as r
+
 
 def get_word():
     word = r.choice(words)
     while "-" in word or " " in word:
         word = r.choice(words)
     return word.upper()
+
 
 def display(let, word):
     display_letter = ""
@@ -17,10 +18,11 @@ def display(let, word):
             display_letter += "-"
     return display_letter
 
+
 def play():
     word = get_word()
     word_letters = set(word)
-    user_letters = ''
+    user_letters = ""
     print(f"Мен {len(word)} хонали сўз ўйладим. Топа оласизми?")
     while word_letters:
         print(display(user_letters, word))
