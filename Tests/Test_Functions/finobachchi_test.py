@@ -7,4 +7,5 @@ class FinobachchiTest(unittest.TestCase):
 		self.assertAlmostEqual(finobachchi(100, 35), False)
 		self.assertAlmostEqual(finobachchi(0), False)
 
-unittest.main()
+if __name__ == '__main__':
+	unittest.main()
