@@ -7,4 +7,5 @@ class IsEvenTest(unittest.TestCase):
 		self.assertAlmostEqual(isEven(list_test), [2, 4, 6, 8, 10])
 		self.assertAlmostEqual(isEven([]), "Ro'yxat bo'sh")
 
-unittest.main()
+if __name__ == '__main__':
+	unittest.main()
