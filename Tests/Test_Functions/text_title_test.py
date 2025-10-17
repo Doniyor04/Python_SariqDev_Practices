@@ -6,4 +6,5 @@ class TextTitleTest(unittest.TestCase):
 		self.assertEqual(textTitle("salom dunyo"), "Salom Dunyo")
 		self.assertEqual(textTitle(''), "Matn bo'sh")
 
-unittest.main()
+if __name__ == '__main__':
+	unittest.main()
